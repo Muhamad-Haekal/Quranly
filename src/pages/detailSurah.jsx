@@ -56,14 +56,15 @@ export default function DetailSurah() {
             <p className="text-right text-3xl leading-loose mb-4">
               {ayat.teksArab}
             </p>
-
-            <p className="text-gray-700 mb-3">
-              <b>{ayat.nomorAyat}.</b> {ayat.teksIndonesia}
+             <p className="mt-3 italic text-gray-700">
+                <b>{ayat.nomorAyat}.</b>{ayat.teksLatin}
             </p>
 
-            <audio controls className="w-full">
-              <source src={ayat.audio["01"]} />
-            </audio>
+            <p className="text-gray-700 mb-3">
+              <b>{ayat.teksIndonesia}</b>
+            </p>
+
+
           </div>
         ))}
       </div>
